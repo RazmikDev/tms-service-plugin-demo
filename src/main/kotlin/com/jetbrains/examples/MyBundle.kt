@@ -1,4 +1,4 @@
-package com.github.razmikdev.tmsserviceplugindemo
+package com.jetbrains.examples
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

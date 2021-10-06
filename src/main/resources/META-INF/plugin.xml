@@ -1,18 +1,20 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.razmikdev.tmsserviceplugindemo</id>
-    <name>tms-service-plugin-demo</name>
-    <vendor>razmikdev</vendor>
+    <id>com.jetbrains.examples.tms</id>
+    <name>TMS Service Demo</name>
+    <vendor>Example</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
+    <depends optional="true" config-file="plugin-tms.xml">com.intellij.tide</depends>
+
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.razmikdev.tmsserviceplugindemo.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.razmikdev.tmsserviceplugindemo.services.MyProjectService"/>
+        <applicationService serviceImplementation="com.jetbrains.examples.services.MyApplicationService"/>
+        <projectService serviceImplementation="com.jetbrains.examples.services.MyProjectService"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.razmikdev.tmsserviceplugindemo.listeners.MyProjectManagerListener"
+        <listener class="com.jetbrains.examples.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
 </idea-plugin>

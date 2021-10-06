@@ -1,0 +1,6 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="com.intellij">
+        <tide.tms.integrationService
+                implementation="com.jetbrains.examples.tms.SampleTmsIntegrationServiceFactory"/>
+    </extensions>
+</idea-plugin>

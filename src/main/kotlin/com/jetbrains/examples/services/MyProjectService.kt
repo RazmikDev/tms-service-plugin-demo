@@ -1,7 +1,7 @@
-package com.github.razmikdev.tmsserviceplugindemo.services
+package com.jetbrains.examples.services
 
 import com.intellij.openapi.project.Project
-import com.github.razmikdev.tmsserviceplugindemo.MyBundle
+import com.jetbrains.examples.*
 
 class MyProjectService(project: Project) {
 
