@@ -6,6 +6,7 @@ import com.jetbrains.services.*
 import com.jetbrains.test.ide.tms.data.*
 import javax.swing.*
 
+@Suppress("UnstableApiUsage")
 internal class SampleTmsIntegrationServiceFactory : TmsIntegrationServiceFactory {
     override val description: String? = null
     override val icon: Icon? = null

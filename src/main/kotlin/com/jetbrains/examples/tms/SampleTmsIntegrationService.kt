@@ -29,7 +29,7 @@ class SampleTmsIntegrationService : TmsIntegrationService {
     ): TmsIntegrationResult {
         require(settings is SampleTmsIntegrationSettings)
 
-        TODO("Not supposed to be implemented in this example")
+        TODO("To be implemented")
     }
 
     override suspend fun import(
@@ -39,7 +39,7 @@ class SampleTmsIntegrationService : TmsIntegrationService {
     ): TmsIntegrationResult {
         require(settings is SampleTmsIntegrationSettings)
 
-        TODO("Not supposed to be implemented in this example")
+        TODO("To be implemented")
     }
 
     override suspend fun loadProjects(settings: ConnectionSettings): TmsIntegrationResult {
